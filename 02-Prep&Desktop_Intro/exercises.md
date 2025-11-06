@@ -40,6 +40,23 @@ Please take a look at the data below and try to spot!
 For a deep dive check the video about [Data Interpreter](https://www.youtube.com/watch?v=Tt6lb1B1C6A)
 
 # Question 3
+**data prep exercise**
+We will use another dataset for this exercise.
+- check `fishspice_daily.csv` in a text editor(vs code)to see the data(we will do the data prep with tableau)
+- create a new workbook in tableau(DO NOT continue with the same workbook where we worked with superstore!!)
+- connect `fishspice_daily.csv`
+- how can we fix the extra header problem with tableau interpreter?
+- change the column names if necessary.
+- Do you see any problem with prices? Can we solve it here using tableau interpreter? Why?
+- Pivot the weekday columns (Monday–Friday) into two columns: one for the `Day`, and one for the `Prices`.(highlight all the day columns and say pivot, then you need to change the field names accordingly)
+- This structure enables us to analyze sales by day or category.
+- create a new worksheet
+- make a bar plot using `Day` and `Prices`
+- add `Category` to the colors for more detail.
+- Is the visual showing correct Prices? Why not? 
+- save the workbook with the proper format.
+
+# Question 4
 **sales by category and region implementation**
 - Create a new worksheet in the same workbook.
 - This bar plot visualisation should show different sales for:
@@ -52,7 +69,7 @@ For a deep dive check the video about [Data Interpreter](https://www.youtube.com
 - Give the worksheet a descriptive name (Sales by Categories and Regions)
 - Save the updated workbook.
 
-# Question 4
+# Question 5
 **Sales by Year and Ship Mode**
 - create a new worksheet
 - create a bar chart that shows total sales for each year.
