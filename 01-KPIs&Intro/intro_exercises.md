@@ -3,11 +3,11 @@ Match the function with the product:
 
 **Function**
 
-1. Clean and join raw data 
-2. Share dashboards online securely	
-3. Build dashboards on your laptop	
-4. View dashboards on the go	
-5. AI-driven alerts & predictions
+1. Clean and join raw data/C
+2. Share dashboards online securely/F
+3. Build dashboards on your laptop/A
+4. View dashboards on the go/D
+5. AI-driven alerts & predictions/E
 
 **Product**
 - A. Tableau Desktop
@@ -31,11 +31,11 @@ Go to the [website]("https://public.tableau.com/app/discover/viz-of-the-day") . 
 Match the scenario with the most appropriate Tableau product(s).
 
 **Scenario**
-1. You are an analyst creating a dashboard for weekly marketing performance.
-2. Your boss wants to check KPIs on her iPad while traveling.
-3. You want to share a public COVID-19 dashboard to promote data transparency.
-4. Your company wants to centrally manage data access for all dashboards.
-5. You want to monitor metrics like sudden drop in sales, and get auto alerts.
+1. You are an analyst creating a dashboard for weekly marketing performance./A
+2. Your boss wants to check KPIs on her iPad while traveling./D
+3. You want to share a public COVID-19 dashboard to promote data transparency./G
+4. Your company wants to centrally manage data access for all dashboards./B
+5. You want to monitor metrics like sudden drop in sales, and get auto alerts./E
 
 **Product**
 
