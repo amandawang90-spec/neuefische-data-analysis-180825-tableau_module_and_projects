@@ -60,8 +60,8 @@ We will use another dataset for this exercise.
 **sales by category and region implementation**
 - Create a new worksheet in the same workbook.
 - This bar plot visualisation should show different sales for:
-    - Category and 
-    - Region 
+    - Category (this should appear under `Product`) and 
+    - Region (this should appear under `Location`)
 - Each bar should represent different sales amounts by category and region.
 - You can make the bar plot more granular by adding profit.
     - Think about how to add profit to this example.
