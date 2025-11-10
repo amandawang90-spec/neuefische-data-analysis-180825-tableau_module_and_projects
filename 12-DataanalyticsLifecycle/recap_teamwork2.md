@@ -1,25 +1,26 @@
-# Review: Check Your Understanding of Last Sessions's Material
 
-Please review the questions below and try to answer them as a team.  
-Open the workbooks you created during last week’s sessions and exercises, and refer to your notes or dashboards to help jog your memory.
-
----
-# Review: Check Your Understanding of Last Week's Material
+# Review: Check Your Understanding of Last Sessions' Material
 
 Please review the questions below and discuss them as a team.  
 Open the workbooks you created last week and revisit your dashboards or visualizations to recall key concepts.
 
 ---
 
-## Day 8: Recap & Practice
+## Recap & Practice
 - What were the key Tableau concepts we reviewed from the previous weeks?  
 - How do parameters, filters, and calculated fields work together to create interactivity?  
 - Why are dashboard design principles important for clear communication?  
-- Complete the **Millennial vs Baby Boomer Employment** exercise to reinforce your understanding.
+- Complete the **Millennial vs Baby Boomer Employment** exercise with
+  - LOD calculations to analyze metrics at generation or state level.
+  - Sets and combined sets to highlight or filter specific industries, states, or cohorts.
+  - Animations to visualize changes over time dynamically.
+  - Extensions such as Sankey diagrams or other custom visualizations to explore flows between industries and generations.
+  - Dashboards and stories to combine multiple visualizations and create interactive analysis.
+  - Encourage users to review ethical visualization practices while building and interpreting their visualizations.
 
 ---
 
-## Day 9: LODs and Sets
+## LODs and Sets
 - What is a Level of Detail (LOD) expression and why is it used?  
 - How do FIXED, INCLUDE, and EXCLUDE differ in LOD calculations?  
 - What is a Set in Tableau and how is it different from a Group?  
@@ -28,7 +29,7 @@ Open the workbooks you created last week and revisit your dashboards or visualiz
 
 ---
 
-## Day 10: Multiple Data Sources & Customization
+## Multiple Data Sources & Customization
 - What’s the difference between joining, blending, and using relationships in Tableau?  
 - When would you use blending instead of a join?  
 - How can you customize Tableau using color palettes, custom forms, or shapes?  
@@ -36,7 +37,7 @@ Open the workbooks you created last week and revisit your dashboards or visualiz
 
 ---
 
-## Day 11: Permissions, Extensions & Ask Data
+## Permissions, Extensions & Ask Data
 - What are Tableau permissions and how do they control user access?  
 - What is row-level security and when is it important?  
 - What are Viz Extensions and how do they extend Tableau’s functionality?  
@@ -45,7 +46,7 @@ Open the workbooks you created last week and revisit your dashboards or visualiz
 
 
 
-## Day 12: Analytics Lifecycle, PM, and Ethics
+## Analytics Lifecycle, PM, and Ethics
 - What are the main phases of the **Data Analytics Lifecycle**?
 - How does **project management** apply to analytics work?
 - Why is communication important in analytics projects?
