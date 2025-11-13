@@ -113,4 +113,16 @@ Hint:
 - Use `Order Date` as filter to show only first and last year. 
 
 
+## Exercise 3: Donut Charts
+We will create 2 donut charts. These two donut charts will show the contribution of each `Category` to overall `Sales` and `Profit`. The outer rings display the proportional value for each category, while the inner rings act as labels or separation, highlighting the distinction between the KPIs.
 
+**Steps to Create Dual Donut Charts in Tableau**
+As we did in the Funnel Chart, we will try to create 2 different axes and put them together. 
+- Drag `Measure Names` to the Filters shelf and select only `Sales` and `Profit`.
+- Drag `Measure Names` to Columns and `Measure Values` to Text on the Marks card.
+- Change the mark type for all Measure Names pills to `Pie`.
+- Create a calculated field with value `1` and drag it **twice to Rows**.
+- On the first row, drag `Category` to Color and increase the size of the pie (outer donut).
+- Drag `Measure Values` to `Angle` in the first pie and set the second (bottom) pie’s color to `white` to create the donut effect.
+- Drag `Measure Names` to Label on the bottom pie and position labels by clicking on the label in the **center**.
+- Right-click one of the axes → Dual Axis, then hide the headers for a cleaner look.
