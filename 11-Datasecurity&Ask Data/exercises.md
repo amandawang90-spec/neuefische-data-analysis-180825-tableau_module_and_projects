@@ -6,6 +6,7 @@
 # Question 2: Tableau Dashboard Extension Exercise – Dynamic sunburst (Superstore)
 A dynamic sunburst chart shows hierarchical data (like categories → subcategories → items) as concentric rings, where each ring level represents a hierarchy level — and it updates interactively based on filters or selections.
 
+**Lets show Profit distribution across hierarchy**
 - Create a new worksheet(profit by location).
    - `Country/Region`, `Region`, and `State/Province`(SKIP AREA) to the columns
    - `Profit` to the rows
@@ -16,9 +17,11 @@ A dynamic sunburst chart shows hierarchical data (like categories → subcategor
    - Select the sheet(profit by location)
    - Select `Profit`
    - your dynamic sunburst is ready.
+   - Each ring segment’s size is proportional to the selected measure (Profit in your case).
 
 
 # Question 3: Row-Level Security (RLS) Exercise
+We are going to try to simulate RLS principles without connecting to the server. Parameter is going to help us to mimic the USERNAME in the server.
 
 ## Prepare Your Files
 - Create the following two CSV files on your computer:
@@ -49,12 +52,18 @@ A dynamic sunburst chart shows hierarchical data (like categories → subcategor
     - Name, Email, Sales (from `spicefish_data`)
     - Username (from `user_access`)
     - Only matching regions from both tables will remain.
+
+- Create a parameter(this part will mimic the server permission):
+    - name it `Simulate User`
+    - choose string and list
+    - add all the email addresses you have in your data
+
 - Right-click in the **Data Pane** → *Create Calculated Field*.
 - Name it: `Access Filter`
 - Paste this formula:
 
 ```tableau
-USERNAME() = [Username]
+[Simulate User] = [Username]
 ```
 
 - Go to a new worksheet.
@@ -62,9 +71,10 @@ USERNAME() = [Username]
 - Drag `Sales` to **Columns**.
 - (Optional) Drag `Region` to **Color** to differentiate regions visually.
 - You should see a simple bar chart showing sales by name.
+- Show the parameter `Simulate User`
 - Locate the `Access Filter` calculated field in the Data Pane.
 - Drag it onto the **Filters Shelf**.
-- In the dialog that appears, check only `True`, then click OK.
+- In the dialog that appears, check only `True`, then click OK.(do not show filter, we are only seeing if it is true)
 - This filter now hides any rows where the logged-in user does not match the username in the permissions table.
 
 # Question 4: Workaround for Trying Ask Data with Superstore:
