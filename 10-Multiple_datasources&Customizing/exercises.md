@@ -51,7 +51,7 @@ This exercise will guide you through integrating multiple Netflix-related data s
 > *Tip: Use the data preview panel to verify that categories or countries may contain multiple entries per show ID.*
 
 ## Connect to New Data Source
-- Click `Data` > `New Data Source`.
+- Click `Add` > `To a File` > `More`.
 - Load **Netflix Cast and Descriptions**.
 - Double-click the main table area to enter the physical layer.
 - Drag the **Descriptions** table to the canvas.
@@ -64,7 +64,7 @@ This exercise will guide you through integrating multiple Netflix-related data s
 - Resolve any linking field warnings by matching `Show ID` from Cast with the main table.
 
 ## Add Third Data Source – Directors
-- Click `Data` > `New Data Source`.
+- Click `Add` > `To a File` > `More`.
 - Load **Netflix Directors**.
 - Rename the source for clarity (e.g., "Netflix Directors").
 
