@@ -19,8 +19,18 @@ A dynamic sunburst chart shows hierarchical data (like categories → subcategor
    - your dynamic sunburst is ready.
    - Each ring segment’s size is proportional to the selected measure (Profit in your case).
 
+# Question 3: (Optional)
+- Use the extensions to create a funnel chart.
+- Click on the extensions in a new worksheet and search for funnel chart.
+- It asks for your email address to provide a code(therefore optional)
+- give the code and activate
+- add `Segment` into the dimensions
+- Add `Sales` to the measurements
 
-# Question 3: Row-Level Security (RLS) Exercise
+# Question 4: Reading
+Learn and Explore more viz extension options [here](https://www.tableau.com/blog/your-guide-tableau-viz-extensions)
+
+# Question 5: Row-Level Security (RLS) Exercise
 We are going to try to simulate RLS principles without connecting to the server. Parameter is going to help us to mimic the USERNAME in the server.
 
 ## Prepare Your Files
@@ -77,34 +87,30 @@ We are going to try to simulate RLS principles without connecting to the server.
 - In the dialog that appears, check only `True`, then click OK.(do not show filter, we are only seeing if it is true)
 - This filter now hides any rows where the logged-in user does not match the username in the permissions table.
 
-# Question 4: Workaround for Trying Ask Data with Superstore:
-- create a new workbook and connect with superstore data
-- you can create 1-2 vizs to test(additional)
-- Go to Server > Publish Data Source.
-- Publish it to your Tableau Cloud or Server site.
-- Once published, go to your browser → navigate to the data source → click “Ask Data”.
-- Now you can ask:
-    - “Show sales by region in 2024”
-    - “Top 5 products by profit”
+# Question 6: More Viz: 
+## Exercise 1: Dumbell Chart
+**Let's explore Sales over time by Region and Category.**
+This Dumbell chart highlights trends in sales, showing both the total trend (line) and the individual yearly values (circles) for each region and category. It helps identify peaks, dips, and overall performance.
 
-# Question 5: Synonyms
-- Go to Ask Data > Data tab > Manage Synonyms.
-- Add synonyms for some fields. For example:
-    - "Sales" → add "revenue"
-    - "Profit" → add "earnings" or "net income"
-    - "Region" → add "area"
-- Test whether Ask Data recognizes these synonyms in new queries.
+- Create a new worksheet.
+- Drag `Sales` to Columns.
+- Drag `Region` and `Category` to Rows.
+- Change the chart type to **Line**.
+- Drag `Order Date` to Path (this defines the line order along the timeline, we used it in the funnel chart).
+- Drag `Year(Order Date)` to Filters → select Years, and enable First and Last Year in your dataset.
+- Drag `Sales` again to Columns → in the Marks card, select Circle for this second measure.
+- Combine both charts into a dual-axis chart (Synchronize axes if necessary.)
+- Drag `Year(Order Date)` to Color in the circle card under marks.
+- analyze the chart
 
-# Question 6: Understand how field visibility impacts user experience with Ask Data
-- Hide irrelevant fields (like Row ID or Lat/Long) or reorder fields logically.
-- Republish the data source.
-- Use Ask Data again and notice how suggestions or search results improve.
 
-# Question 7: Use Ask Data to Build a Viz and Save to a Workbook
-- Ask a question (e.g., “sales by category in 2023”).
-- Refine the chart using Ask Data’s visual editor (change chart type, filter).
-- Click “Save As” → create a new worksheet or dashboard from it.
-- Try to build the same view manually in Tableau Desktop.
-- Compare the results and formatting. Is there any difference?
-- enable Data Stories.
-- Read the automatically generated narrative and verify if it matches the data.
+## Exercise 2: Alternative for the Dumbell Chart
+You previously created a dual-axis chart (line + circles) to visualize sales trends by Region and Category over time.(showing the first and last year)
+Explore an alternative way to visualize the same data using bar graph instead of lines and circles.
+
+Hint:
+- Use `Order Date`, `Sales`, `Region` and `Category` in rows or columns
+- Use `Order Date` as filter to show only first and last year. 
+
+
+
