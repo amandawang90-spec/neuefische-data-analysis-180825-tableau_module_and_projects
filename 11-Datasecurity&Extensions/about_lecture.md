@@ -15,12 +15,5 @@
 
 ---
 
-## Ask Data & Natural Language Queries
 
-- Discover **Ask Data**, Tableau’s built-in natural language query tool that helps users build charts by simply typing a question.
-- Learn how to open Ask Data and explore a dataset using plain English (e.g., “Show sales by region last year”).
-- Understand the strengths and limitations of natural language interfaces in analytics tools.
-
----
-
-After exploring Sankey diagrams in the first part, you’ll dive into permissions and data security through hands-on exercises. You’ll also try out Ask Data to practice querying without dragging any fields at all.
+After exploring Sankey diagrams in the first part, you’ll dive into permissions and data security through hands-on exercises. 

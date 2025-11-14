@@ -1,0 +1,6 @@
+DailyFishPrices
+ItemID,Categorys,Monday,Tuesday,Wednesday,Thursday,Friday,status
+S001,Spices,5,6,4,5,3,yes
+S002,Spices,2,3,2,1,2,yes
+F001,Fish,4,5,6,5,6,yes
+F002,Fish,1,0,-2,3,4,yes

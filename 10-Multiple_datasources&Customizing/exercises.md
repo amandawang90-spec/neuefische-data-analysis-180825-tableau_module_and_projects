@@ -51,7 +51,7 @@ This exercise will guide you through integrating multiple Netflix-related data s
 > *Tip: Use the data preview panel to verify that categories or countries may contain multiple entries per show ID.*
 
 ## Connect to New Data Source
-- Click `Data` > `New Data Source`.
+- Click `Add` > `To a File` > `More`.
 - Load **Netflix Cast and Descriptions**.
 - Double-click the main table area to enter the physical layer.
 - Drag the **Descriptions** table to the canvas.
@@ -62,9 +62,10 @@ This exercise will guide you through integrating multiple Netflix-related data s
 - Back in the logical layer, drag the **Cast** table.
 - Set up a relationship using `Show ID`.
 - Resolve any linking field warnings by matching `Show ID` from Cast with the main table.
+- go next to the title and give the source project the name `Netflix` and click on the arrow next to the title/database logo to follow the next instructions
 
 ## Add Third Data Source – Directors
-- Click `Data` > `New Data Source`.
+- Click `New Data Source`
 - Load **Netflix Directors**.
 - Rename the source for clarity (e.g., "Netflix Directors").
 
@@ -75,7 +76,7 @@ This exercise will guide you through integrating multiple Netflix-related data s
 - Hide the table name field (used to track which table rows came from).
 
 ## Blend Data Between Sources
-- Add a sheet and observe that both data sources are available.
+- Add a worksheet and observe that both data sources are available.(There should be two data source projects, `Netflix` and `Netflix Directors`)
 - Drag `Title` (from Netflix Titles source) to Rows.
 - Drag `Cast` (from Netflix Cast source) to Detail or Tooltip.
 - Click on the **broken link icon** next to `Show ID` in the secondary source (e.g., Netflix Directors).
