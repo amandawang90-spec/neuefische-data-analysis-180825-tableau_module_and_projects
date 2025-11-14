@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='titles+ (netflix_titles)' inline='true' name='federated.1x1e18h098ojsi13hljnj0vson9q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='excel-direct.004skwa088075z16yyed71vkx2c0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/10-Multiple_datasources&amp;Customizing/netflix_titles.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='netflix_cast_and_descriptions' name='excel-direct.099o3800m6losd11rn7jv0lq1ds6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/10-Multiple_datasources&amp;Customizing/netflix_cast_and_descriptions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='netflix_directors' name='excel-direct.04p56nv139hrri168b5hg104sxza'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/10-Multiple_datasources&amp;Customizing/netflix_directors.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[titles].[show_id]' />
+                <expression op='[descriptions].[show_id]' />
+              </expression>
+            </clause>
+            <relation join='inner' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[titles].[show_id]' />
+                  <expression op='[details].[show]' />
+                </expression>
+              </clause>
+              <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='titles' table='[titles$]' type='table'>
+                <columns gridOrigin='A1:B6233:no:A1:B6233:0' header='yes' outcome='6'>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='integer' name='show_id' ordinal='1' />
+                </columns>
+              </relation>
+              <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='details' table='[details$]' type='table'>
+                <columns gridOrigin='A1:G6233:no:A1:G6233:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='show' ordinal='0' />
+                  <column datatype='integer' name='duration_minutes' ordinal='1' />
+                  <column datatype='integer' name='duration_seasons' ordinal='2' />
+                  <column datatype='string' name='type' ordinal='3' />
+                  <column datatype='date' name='date_added' ordinal='4' />
+                  <column datatype='integer' name='release_year' ordinal='5' />
+                  <column datatype='string' name='rating' ordinal='6' />
+                </columns>
+              </relation>
+            </relation>
+            <relation connection='excel-direct.099o3800m6losd11rn7jv0lq1ds6' name='descriptions' table='[descriptions$]' type='table'>
+              <columns gridOrigin='A1:B6233:no:A1:B6233:0' header='yes' outcome='6'>
+                <column datatype='integer' name='show_id' ordinal='0' />
+                <column datatype='string' name='description' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.099o3800m6losd11rn7jv0lq1ds6' name='cast' table='[cast$]' type='table'>
+            <columns gridOrigin='A1:B10001:no:A1:B10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='cast' ordinal='0' />
+              <column datatype='integer' name='show_id' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='categories' table='[categories$]' type='table'>
+            <columns gridOrigin='A1:B13671:no:A1:B13671:0' header='yes' outcome='6'>
+              <column datatype='integer' name='show_id' ordinal='0' />
+              <column datatype='string' name='listed_in' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='countries' table='[countries$]' type='table'>
+            <columns gridOrigin='A1:B7180:no:A1:B7180:0' header='yes' outcome='6'>
+              <column datatype='string' name='country' ordinal='0' />
+              <column datatype='integer' name='show_id' ordinal='1' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[cast]' value='[cast].[cast]' />
+          <map key='[country]' value='[countries].[country]' />
+          <map key='[date_added]' value='[details].[date_added]' />
+          <map key='[description]' value='[descriptions].[description]' />
+          <map key='[duration_minutes]' value='[details].[duration_minutes]' />
+          <map key='[duration_seasons]' value='[details].[duration_seasons]' />
+          <map key='[listed_in]' value='[categories].[listed_in]' />
+          <map key='[rating]' value='[details].[rating]' />
+          <map key='[release_year]' value='[details].[release_year]' />
+          <map key='[show]' value='[details].[show]' />
+          <map key='[show_id (cast)]' value='[cast].[show_id]' />
+          <map key='[show_id (categories)]' value='[categories].[show_id]' />
+          <map key='[show_id (countries)]' value='[countries].[show_id]' />
+          <map key='[show_id (descriptions)]' value='[descriptions].[show_id]' />
+          <map key='[show_id]' value='[titles].[show_id]' />
+          <map key='[title]' value='[titles].[title]' />
+          <map key='[type]' value='[details].[type]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titles]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6233:no:A1:B6233:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[details]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G6233:no:A1:G6233:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[descriptions]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6233:no:A1:B6233:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cast]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B10001:no:A1:B10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[categories]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B13671:no:A1:B13671:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[countries]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B7180:no:A1:B7180:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[titles]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[titles]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>show</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration_minutes]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>duration_minutes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_seasons</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration_seasons]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>duration_seasons</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[details]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id (descriptions)]</local-name>
+            <parent-name>[descriptions]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[descriptions]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[titles_D73BEA99129A40D2A4415EE40F44AFB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[cast]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[cast_54427578FEF3415B9D4A080384C1B488]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id (cast)]</local-name>
+            <parent-name>[cast]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[cast_54427578FEF3415B9D4A080384C1B488]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id (categories)]</local-name>
+            <parent-name>[categories]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[categories_E8A5A2103DB045559179CA5076056922]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[categories]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[categories_E8A5A2103DB045559179CA5076056922]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[countries]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[countries_ABAEEE4AFCBD4ACAA4F3A8EE931436B5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id (countries)]</local-name>
+            <parent-name>[countries]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[countries_ABAEEE4AFCBD4ACAA4F3A8EE931436B5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cast' datatype='table' name='[__tableau_internal_object_id__].[cast_54427578FEF3415B9D4A080384C1B488]' role='measure' type='quantitative' />
+      <column caption='categories' datatype='table' name='[__tableau_internal_object_id__].[categories_E8A5A2103DB045559179CA5076056922]' role='measure' type='quantitative' />
+      <column caption='countries' datatype='table' name='[__tableau_internal_object_id__].[countries_ABAEEE4AFCBD4ACAA4F3A8EE931436B5]' role='measure' type='quantitative' />
+      <column caption='titles' datatype='table' name='[__tableau_internal_object_id__].[titles_D73BEA99129A40D2A4415EE40F44AFB8]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Duration Minutes' datatype='integer' name='[duration_minutes]' role='measure' type='quantitative' />
+      <column caption='Duration Seasons' datatype='integer' name='[duration_seasons]' role='measure' type='quantitative' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show' datatype='integer' hidden='true' name='[show]' role='measure' type='quantitative' />
+      <column caption='Show Id (Cast)' datatype='integer' name='[show_id (cast)]' role='dimension' type='ordinal' />
+      <column caption='Show Id (Categories)' datatype='integer' name='[show_id (categories)]' role='dimension' type='ordinal' />
+      <column caption='Show Id (Countries)' datatype='integer' name='[show_id (countries)]' role='dimension' type='ordinal' />
+      <column caption='Show Id (Descriptions)' datatype='integer' hidden='true' name='[show_id (descriptions)]' role='dimension' type='ordinal' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:type:nk]' palette='spiced_nf' type='shape'>
+            <map to='spiced_nf/NF_Logo-Fish_black.png'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='spiced_nf/NF_Logo-Fish_orange.png'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='cast' id='cast_54427578FEF3415B9D4A080384C1B488'>
+            <properties context=''>
+              <relation connection='excel-direct.099o3800m6losd11rn7jv0lq1ds6' name='cast' table='[cast$]' type='table'>
+                <columns gridOrigin='A1:B10001:no:A1:B10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='cast' ordinal='0' />
+                  <column datatype='integer' name='show_id' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='categories' id='categories_E8A5A2103DB045559179CA5076056922'>
+            <properties context=''>
+              <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='categories' table='[categories$]' type='table'>
+                <columns gridOrigin='A1:B13671:no:A1:B13671:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='show_id' ordinal='0' />
+                  <column datatype='string' name='listed_in' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='countries' id='countries_ABAEEE4AFCBD4ACAA4F3A8EE931436B5'>
+            <properties context=''>
+              <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='countries' table='[countries$]' type='table'>
+                <columns gridOrigin='A1:B7180:no:A1:B7180:0' header='yes' outcome='6'>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='show_id' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='titles' id='titles_D73BEA99129A40D2A4415EE40F44AFB8'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[titles].[show_id]' />
+                    <expression op='[descriptions].[show_id]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[titles].[show_id]' />
+                      <expression op='[details].[show]' />
+                    </expression>
+                  </clause>
+                  <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='titles' table='[titles$]' type='table'>
+                    <columns gridOrigin='A1:B6233:no:A1:B6233:0' header='yes' outcome='6'>
+                      <column datatype='string' name='title' ordinal='0' />
+                      <column datatype='integer' name='show_id' ordinal='1' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.004skwa088075z16yyed71vkx2c0' name='details' table='[details$]' type='table'>
+                    <columns gridOrigin='A1:G6233:no:A1:G6233:0' header='yes' outcome='2'>
+                      <column datatype='integer' name='show' ordinal='0' />
+                      <column datatype='integer' name='duration_minutes' ordinal='1' />
+                      <column datatype='integer' name='duration_seasons' ordinal='2' />
+                      <column datatype='string' name='type' ordinal='3' />
+                      <column datatype='date' name='date_added' ordinal='4' />
+                      <column datatype='integer' name='release_year' ordinal='5' />
+                      <column datatype='string' name='rating' ordinal='6' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='excel-direct.099o3800m6losd11rn7jv0lq1ds6' name='descriptions' table='[descriptions$]' type='table'>
+                  <columns gridOrigin='A1:B6233:no:A1:B6233:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='show_id' ordinal='0' />
+                    <column datatype='string' name='description' ordinal='1' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[show_id]' />
+              <expression op='[show_id (cast)]' />
+            </expression>
+            <first-end-point object-id='titles_D73BEA99129A40D2A4415EE40F44AFB8' />
+            <second-end-point object-id='cast_54427578FEF3415B9D4A080384C1B488' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[show_id]' />
+              <expression op='[show_id (categories)]' />
+            </expression>
+            <first-end-point object-id='titles_D73BEA99129A40D2A4415EE40F44AFB8' />
+            <second-end-point object-id='categories_E8A5A2103DB045559179CA5076056922' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[show_id]' />
+              <expression op='[show_id (countries)]' />
+            </expression>
+            <first-end-point object-id='titles_D73BEA99129A40D2A4415EE40F44AFB8' />
+            <second-end-point object-id='countries_ABAEEE4AFCBD4ACAA4F3A8EE931436B5' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='directors+ (netflix_directors)' inline='true' name='federated.1tvxm6110afe6t1d4v4rb1njan7r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_directors' name='excel-direct.10r9k8p09o66za14yv8lc08bk0oo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/10-Multiple_datasources&amp;Customizing 1/netflix_directors.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='directors+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='director' />
+            <column datatype='integer' name='show_id' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.10r9k8p09o66za14yv8lc08bk0oo' name='directors' table='[directors$]' type='table'>
+            <columns gridOrigin='A1:B2040:no:A1:B2040:0' header='yes' outcome='6'>
+              <column datatype='string' name='director' ordinal='0' />
+              <column datatype='integer' name='show_id' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.10r9k8p09o66za14yv8lc08bk0oo' name='directors (2)' table='[&apos;directors (2)$&apos;]' type='table'>
+            <columns gridOrigin='A1:B2814:no:A1:B2814:0' header='yes' outcome='6'>
+              <column datatype='string' name='director' ordinal='0' />
+              <column datatype='integer' name='show_id' ordinal='1' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[directors+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[directors+]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <object-id>[directors_008B050A935E439790A82F9AF7310ABF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[directors+]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[directors_008B050A935E439790A82F9AF7310ABF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[directors+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <object-id>[directors_008B050A935E439790A82F9AF7310ABF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[directors+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <object-id>[directors_008B050A935E439790A82F9AF7310ABF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='directors' datatype='table' name='[__tableau_internal_object_id__].[directors_008B050A935E439790A82F9AF7310ABF]' role='measure' type='quantitative' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='directors' id='directors_008B050A935E439790A82F9AF7310ABF'>
+            <properties context=''>
+              <relation all='true' name='directors+' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='director' />
+                  <column datatype='integer' name='show_id' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.10r9k8p09o66za14yv8lc08bk0oo' name='directors' table='[directors$]' type='table'>
+                  <columns gridOrigin='A1:B2040:no:A1:B2040:0' header='yes' outcome='6'>
+                    <column datatype='string' name='director' ordinal='0' />
+                    <column datatype='integer' name='show_id' ordinal='1' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.10r9k8p09o66za14yv8lc08bk0oo' name='directors (2)' table='[&apos;directors (2)$&apos;]' type='table'>
+                  <columns gridOrigin='A1:B2814:no:A1:B2814:0' header='yes' outcome='6'>
+                    <column datatype='string' name='director' ordinal='0' />
+                    <column datatype='integer' name='show_id' ordinal='1' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titles+ (netflix_titles)' name='federated.1x1e18h098ojsi13hljnj0vson9q' />
+            <datasource caption='directors+ (netflix_directors)' name='federated.1tvxm6110afe6t1d4v4rb1njan7r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tvxm6110afe6t1d4v4rb1njan7r'>
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1x1e18h098ojsi13hljnj0vson9q'>
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x1e18h098ojsi13hljnj0vson9q].[none:title:nk]</rows>
+        <cols />
+        <join-lod-include-overrides>
+          <column>[federated.1tvxm6110afe6t1d4v4rb1njan7r].[show_id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{98605B67-B4CC-4434-919C-B26D484DA568}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{821F1B65-134D-4CEE-9CAD-2413E5CD19FD}' />
+    </window>
+  </windows>
+</workbook>
