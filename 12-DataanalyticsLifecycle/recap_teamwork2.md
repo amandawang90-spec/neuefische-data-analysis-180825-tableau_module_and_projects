@@ -37,13 +37,10 @@ Open the workbooks you created last week and revisit your dashboards or visualiz
 
 ---
 
-## Permissions, Extensions & Ask Data
+## Permissions & Extensions
 - What are Tableau permissions and how do they control user access?  
 - What is row-level security and when is it important?  
 - What are Viz Extensions and how do they extend Tableau’s functionality?  
-- What is Ask Data and how can you use it to explore data with natural language?  
-- How can these features improve collaboration, governance, and interactivity?
-
 
 
 ## Analytics Lifecycle, PM, and Ethics
