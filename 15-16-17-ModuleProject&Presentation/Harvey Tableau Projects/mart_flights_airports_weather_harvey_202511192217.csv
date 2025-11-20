@@ -1,0 +1,253 @@
+"faa","flight_date","name","city","total_planned_flights","total_actual_flights","total_cancelled_flights","total_diverted_flights","cancellation_percentage","diversion_percentage"
+IAH,2017-08-26,George Bush Intercontinental Houston Airport,Houston,586,182,393,20,67.06,3.41
+HOU,2017-09-06,William P Hobby Airport,Houston,300,233,50,18,16.67,6.00
+HOU,2017-09-04,William P Hobby Airport,Houston,282,178,89,15,31.56,5.32
+IAH,2017-08-02,George Bush Intercontinental Houston Airport,Houston,776,767,9,15,1.16,1.93
+IAH,2017-09-18,George Bush Intercontinental Houston Airport,Houston,721,715,6,13,0.83,1.80
+HOU,2017-09-05,William P Hobby Airport,Houston,300,203,86,13,28.67,4.33
+HOU,2017-08-26,William P Hobby Airport,Houston,254,114,131,10,51.57,3.94
+HOU,2017-08-29,William P Hobby Airport,Houston,304,0,296,8,97.37,2.63
+HOU,2017-09-20,William P Hobby Airport,Houston,300,296,5,6,1.67,2.00
+HOU,2017-09-18,William P Hobby Airport,Houston,302,297,5,5,1.66,1.66
+IAH,2017-09-16,George Bush Intercontinental Houston Airport,Houston,536,534,2,5,0.37,0.93
+IAH,2017-08-06,George Bush Intercontinental Houston Airport,Houston,729,724,4,5,0.55,0.69
+HOU,2017-08-07,William P Hobby Airport,Houston,326,293,32,5,9.82,1.53
+IAH,2017-08-11,George Bush Intercontinental Houston Airport,Houston,771,767,4,4,0.52,0.52
+IAH,2017-09-07,George Bush Intercontinental Houston Airport,Houston,608,602,6,4,0.99,0.66
+IAH,2017-09-21,George Bush Intercontinental Houston Airport,Houston,728,724,4,4,0.55,0.55
+IAH,2017-08-22,George Bush Intercontinental Houston Airport,Houston,652,648,4,4,0.61,0.61
+IAH,2017-08-05,George Bush Intercontinental Houston Airport,Houston,649,643,6,3,0.92,0.46
+IAH,2017-08-04,George Bush Intercontinental Houston Airport,Houston,775,771,4,3,0.52,0.39
+IAH,2017-08-19,George Bush Intercontinental Houston Airport,Houston,605,605,0,3,0.00,0.50
+HOU,2017-08-02,William P Hobby Airport,Houston,326,321,5,3,1.53,0.92
+IAH,2017-09-20,George Bush Intercontinental Houston Airport,Houston,654,651,2,3,0.31,0.46
+IAH,2017-09-24,George Bush Intercontinental Houston Airport,Houston,679,677,2,3,0.29,0.44
+HOU,2017-09-14,William P Hobby Airport,Houston,302,293,9,2,2.98,0.66
+IAH,2017-08-03,George Bush Intercontinental Houston Airport,Houston,773,766,7,2,0.91,0.26
+HOU,2017-08-30,William P Hobby Airport,Houston,304,0,302,2,99.34,0.66
+HOU,2017-08-05,William P Hobby Airport,Houston,267,261,6,2,2.25,0.75
+IAH,2017-09-19,George Bush Intercontinental Houston Airport,Houston,650,649,1,2,0.15,0.31
+IAH,2017-08-07,George Bush Intercontinental Houston Airport,Houston,777,729,48,2,6.18,0.26
+IAH,2017-08-14,George Bush Intercontinental Houston Airport,Houston,765,762,3,2,0.39,0.26
+IAH,2017-09-22,George Bush Intercontinental Houston Airport,Houston,727,725,2,2,0.28,0.28
+IAH,2017-09-23,George Bush Intercontinental Houston Airport,Houston,537,535,2,2,0.37,0.37
+HOU,2017-09-01,William P Hobby Airport,Houston,304,16,286,2,94.08,0.66
+CRP,2017-08-29,Corpus Christi International Airport,Corpus Christi,14,2,12,2,85.71,14.29
+HOU,2017-09-08,William P Hobby Airport,Houston,298,294,4,2,1.34,0.67
+HOU,2017-08-31,William P Hobby Airport,Houston,306,7,297,2,97.06,0.65
+IAH,2017-08-08,George Bush Intercontinental Houston Airport,Houston,772,766,6,2,0.78,0.26
+HOU,2017-09-21,William P Hobby Airport,Houston,302,300,2,1,0.66,0.33
+IAH,2017-09-11,George Bush Intercontinental Houston Airport,Houston,719,637,82,1,11.40,0.14
+HOU,2017-09-27,William P Hobby Airport,Houston,300,298,2,1,0.67,0.33
+HOU,2017-09-02,William P Hobby Airport,Houston,213,59,154,1,72.30,0.47
+IAH,2017-09-14,George Bush Intercontinental Houston Airport,Houston,727,714,13,1,1.79,0.14
+IAH,2017-09-15,George Bush Intercontinental Houston Airport,Houston,721,715,6,1,0.83,0.14
+IAH,2017-08-01,George Bush Intercontinental Houston Airport,Houston,771,771,0,1,0.00,0.13
+HOU,2017-09-28,William P Hobby Airport,Houston,302,301,1,1,0.33,0.33
+HOU,2017-08-17,William P Hobby Airport,Houston,308,303,5,1,1.62,0.32
+IAH,2017-08-17,George Bush Intercontinental Houston Airport,Houston,729,726,3,1,0.41,0.14
+HOU,2017-08-10,William P Hobby Airport,Houston,326,323,4,1,1.23,0.31
+IAH,2017-08-21,George Bush Intercontinental Houston Airport,Houston,727,726,1,1,0.14,0.14
+IAH,2017-08-20,George Bush Intercontinental Houston Airport,Houston,709,709,0,1,0.00,0.14
+HOU,2017-08-19,William P Hobby Airport,Houston,258,257,1,1,0.39,0.39
+HOU,2017-09-11,William P Hobby Airport,Houston,302,252,50,1,16.56,0.33
+IAH,2017-08-24,George Bush Intercontinental Houston Airport,Houston,724,724,0,1,0.00,0.14
+LCH,2017-08-24,Lake Charles Regional Airport,Lake Charles,6,6,0,1,0.00,16.67
+IAH,2017-08-27,George Bush Intercontinental Houston Airport,Houston,693,13,679,1,97.98,0.14
+HOU,2017-08-12,William P Hobby Airport,Houston,267,266,1,1,0.37,0.37
+CRP,2017-09-05,Corpus Christi International Airport,Corpus Christi,14,13,1,1,7.14,7.14
+IAH,2017-09-01,George Bush Intercontinental Houston Airport,Houston,729,224,505,1,69.27,0.14
+IAH,2017-09-02,George Bush Intercontinental Houston Airport,Houston,528,294,234,1,44.32,0.19
+HOU,2017-08-25,William P Hobby Airport,Houston,306,250,56,1,18.30,0.33
+HOU,2017-08-03,William P Hobby Airport,Houston,326,316,10,1,3.07,0.31
+IAH,2017-08-10,George Bush Intercontinental Houston Airport,Houston,772,769,3,1,0.39,0.13
+IAH,2017-09-08,George Bush Intercontinental Houston Airport,Houston,627,611,16,1,2.55,0.16
+HOU,2017-07-30,William P Hobby Airport,Houston,315,315,0,0,0.00,0.00
+HOU,2017-07-31,William P Hobby Airport,Houston,326,324,2,0,0.61,0.00
+HOU,2017-08-01,William P Hobby Airport,Houston,326,324,2,0,0.61,0.00
+HOU,2017-08-04,William P Hobby Airport,Houston,326,314,12,0,3.68,0.00
+HOU,2017-08-06,William P Hobby Airport,Houston,315,306,9,0,2.86,0.00
+HOU,2017-08-08,William P Hobby Airport,Houston,326,324,2,0,0.61,0.00
+HOU,2017-08-09,William P Hobby Airport,Houston,326,319,7,0,2.15,0.00
+HOU,2017-08-11,William P Hobby Airport,Houston,326,323,3,0,0.92,0.00
+HOU,2017-08-13,William P Hobby Airport,Houston,315,312,3,0,0.95,0.00
+HOU,2017-08-14,William P Hobby Airport,Houston,326,322,4,0,1.23,0.00
+HOU,2017-08-15,William P Hobby Airport,Houston,301,296,5,0,1.66,0.00
+HOU,2017-08-16,William P Hobby Airport,Houston,304,303,1,0,0.33,0.00
+HOU,2017-08-18,William P Hobby Airport,Houston,308,307,1,0,0.32,0.00
+HOU,2017-08-20,William P Hobby Airport,Houston,286,286,0,0,0.00,0.00
+HOU,2017-08-21,William P Hobby Airport,Houston,308,307,1,0,0.32,0.00
+HOU,2017-08-22,William P Hobby Airport,Houston,304,302,2,0,0.66,0.00
+HOU,2017-08-23,William P Hobby Airport,Houston,304,303,1,0,0.33,0.00
+HOU,2017-08-24,William P Hobby Airport,Houston,306,303,3,0,0.98,0.00
+HOU,2017-08-27,William P Hobby Airport,Houston,284,0,284,0,100.00,0.00
+HOU,2017-08-28,William P Hobby Airport,Houston,304,0,304,0,100.00,0.00
+HOU,2017-09-03,William P Hobby Airport,Houston,207,156,51,0,24.64,0.00
+HOU,2017-09-07,William P Hobby Airport,Houston,300,297,3,0,1.00,0.00
+HOU,2017-09-09,William P Hobby Airport,Houston,246,238,8,0,3.25,0.00
+HOU,2017-09-10,William P Hobby Airport,Houston,278,257,21,0,7.55,0.00
+HOU,2017-09-12,William P Hobby Airport,Houston,300,273,27,0,9.00,0.00
+HOU,2017-09-13,William P Hobby Airport,Houston,300,290,10,0,3.33,0.00
+HOU,2017-09-15,William P Hobby Airport,Houston,300,300,0,0,0.00,0.00
+HOU,2017-09-16,William P Hobby Airport,Houston,248,247,1,0,0.40,0.00
+HOU,2017-09-17,William P Hobby Airport,Houston,276,275,1,0,0.36,0.00
+HOU,2017-09-19,William P Hobby Airport,Houston,300,298,2,0,0.67,0.00
+HOU,2017-09-22,William P Hobby Airport,Houston,300,300,0,0,0.00,0.00
+HOU,2017-09-23,William P Hobby Airport,Houston,248,246,2,0,0.81,0.00
+HOU,2017-09-24,William P Hobby Airport,Houston,278,274,4,0,1.44,0.00
+HOU,2017-09-25,William P Hobby Airport,Houston,302,300,2,0,0.66,0.00
+HOU,2017-09-26,William P Hobby Airport,Houston,300,300,0,0,0.00,0.00
+IAH,2017-07-28,George Bush Intercontinental Houston Airport,Houston,787,786,1,0,0.13,0.00
+IAH,2017-07-29,George Bush Intercontinental Houston Airport,Houston,658,657,1,0,0.15,0.00
+IAH,2017-07-30,George Bush Intercontinental Houston Airport,Houston,742,742,0,0,0.00,0.00
+IAH,2017-07-31,George Bush Intercontinental Houston Airport,Houston,785,785,0,0,0.00,0.00
+IAH,2017-08-09,George Bush Intercontinental Houston Airport,Houston,774,774,0,0,0.00,0.00
+IAH,2017-08-12,George Bush Intercontinental Houston Airport,Houston,645,644,1,0,0.16,0.00
+IAH,2017-08-13,George Bush Intercontinental Houston Airport,Houston,724,723,1,0,0.14,0.00
+IAH,2017-08-15,George Bush Intercontinental Houston Airport,Houston,666,664,2,0,0.30,0.00
+IAH,2017-08-16,George Bush Intercontinental Houston Airport,Houston,724,722,2,0,0.28,0.00
+IAH,2017-08-18,George Bush Intercontinental Houston Airport,Houston,731,731,0,0,0.00,0.00
+IAH,2017-08-23,George Bush Intercontinental Houston Airport,Houston,715,710,5,0,0.70,0.00
+IAH,2017-08-25,George Bush Intercontinental Houston Airport,Houston,727,708,19,0,2.61,0.00
+IAH,2017-08-28,George Bush Intercontinental Houston Airport,Houston,723,4,719,0,99.45,0.00
+IAH,2017-08-29,George Bush Intercontinental Houston Airport,Houston,642,0,642,0,100.00,0.00
+IAH,2017-08-30,George Bush Intercontinental Houston Airport,Houston,709,7,702,0,99.01,0.00
+IAH,2017-08-31,George Bush Intercontinental Houston Airport,Houston,719,104,615,0,85.54,0.00
+IAH,2017-09-03,George Bush Intercontinental Houston Airport,Houston,532,330,202,0,37.97,0.00
+IAH,2017-09-04,George Bush Intercontinental Houston Airport,Houston,679,420,259,0,38.14,0.00
+IAH,2017-09-05,George Bush Intercontinental Houston Airport,Houston,717,475,242,0,33.75,0.00
+IAH,2017-09-06,George Bush Intercontinental Houston Airport,Houston,568,562,6,0,1.06,0.00
+IAH,2017-09-09,George Bush Intercontinental Houston Airport,Houston,531,491,40,0,7.53,0.00
+IAH,2017-09-10,George Bush Intercontinental Houston Airport,Houston,674,613,61,0,9.05,0.00
+IAH,2017-09-12,George Bush Intercontinental Houston Airport,Houston,646,609,37,0,5.73,0.00
+IAH,2017-09-13,George Bush Intercontinental Houston Airport,Houston,651,633,18,0,2.76,0.00
+IAH,2017-09-17,George Bush Intercontinental Houston Airport,Houston,679,679,0,0,0.00,0.00
+IAH,2017-09-25,George Bush Intercontinental Houston Airport,Houston,723,721,2,0,0.28,0.00
+IAH,2017-09-26,George Bush Intercontinental Houston Airport,Houston,650,648,2,0,0.31,0.00
+IAH,2017-09-27,George Bush Intercontinental Houston Airport,Houston,654,652,2,0,0.31,0.00
+IAH,2017-09-28,George Bush Intercontinental Houston Airport,Houston,728,726,2,0,0.27,0.00
+LCH,2017-07-28,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-07-29,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-07-30,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-07-31,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-01,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-02,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-03,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-04,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-05,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-08-06,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-07,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-08,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-09,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-10,Lake Charles Regional Airport,Lake Charles,6,5,1,0,16.67,0.00
+LCH,2017-08-11,Lake Charles Regional Airport,Lake Charles,6,5,1,0,16.67,0.00
+LCH,2017-08-12,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-08-13,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-14,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-15,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-08-16,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-17,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-18,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-19,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-08-20,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-21,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-22,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-08-23,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-25,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-08-26,Lake Charles Regional Airport,Lake Charles,2,1,1,0,50.00,0.00
+LCH,2017-08-27,Lake Charles Regional Airport,Lake Charles,6,0,6,0,100.00,0.00
+LCH,2017-08-28,Lake Charles Regional Airport,Lake Charles,6,0,6,0,100.00,0.00
+LCH,2017-08-29,Lake Charles Regional Airport,Lake Charles,4,0,4,0,100.00,0.00
+LCH,2017-08-30,Lake Charles Regional Airport,Lake Charles,6,0,6,0,100.00,0.00
+LCH,2017-08-31,Lake Charles Regional Airport,Lake Charles,6,0,6,0,100.00,0.00
+LCH,2017-09-01,Lake Charles Regional Airport,Lake Charles,6,1,5,0,83.33,0.00
+LCH,2017-09-02,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-09-03,Lake Charles Regional Airport,Lake Charles,4,2,2,0,50.00,0.00
+LCH,2017-09-04,Lake Charles Regional Airport,Lake Charles,4,2,2,0,50.00,0.00
+LCH,2017-09-05,Lake Charles Regional Airport,Lake Charles,6,1,5,0,83.33,0.00
+LCH,2017-09-06,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-07,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-08,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-09-09,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-09-10,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-09-11,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-12,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-13,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-14,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-15,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-16,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-09-17,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-09-18,Lake Charles Regional Airport,Lake Charles,6,5,1,0,16.67,0.00
+LCH,2017-09-19,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-20,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-21,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-22,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-23,Lake Charles Regional Airport,Lake Charles,2,2,0,0,0.00,0.00
+LCH,2017-09-24,Lake Charles Regional Airport,Lake Charles,4,4,0,0,0.00,0.00
+LCH,2017-09-25,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-26,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+LCH,2017-09-27,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+CRP,2017-07-28,Corpus Christi International Airport,Corpus Christi,16,15,1,0,6.25,0.00
+LCH,2017-09-28,Lake Charles Regional Airport,Lake Charles,6,6,0,0,0.00,0.00
+CRP,2017-07-29,Corpus Christi International Airport,Corpus Christi,10,10,0,0,0.00,0.00
+CRP,2017-07-30,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-07-31,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-08-01,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-02,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-08-03,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-04,Corpus Christi International Airport,Corpus Christi,15,15,0,0,0.00,0.00
+CRP,2017-08-05,Corpus Christi International Airport,Corpus Christi,9,7,2,0,22.22,0.00
+CRP,2017-08-06,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-08-07,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-08,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-09,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-08-10,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-11,Corpus Christi International Airport,Corpus Christi,15,15,0,0,0.00,0.00
+CRP,2017-08-12,Corpus Christi International Airport,Corpus Christi,9,9,0,0,0.00,0.00
+CRP,2017-08-13,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-14,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-15,Corpus Christi International Airport,Corpus Christi,15,15,0,0,0.00,0.00
+CRP,2017-08-16,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-17,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-18,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-19,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-08-20,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-08-21,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-22,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-23,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-24,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-08-25,Corpus Christi International Airport,Corpus Christi,14,1,13,0,92.86,0.00
+CRP,2017-08-26,Corpus Christi International Airport,Corpus Christi,12,0,12,0,100.00,0.00
+CRP,2017-08-27,Corpus Christi International Airport,Corpus Christi,12,0,12,0,100.00,0.00
+CRP,2017-08-28,Corpus Christi International Airport,Corpus Christi,14,0,14,0,100.00,0.00
+CRP,2017-08-30,Corpus Christi International Airport,Corpus Christi,14,0,14,0,100.00,0.00
+CRP,2017-08-31,Corpus Christi International Airport,Corpus Christi,14,0,14,0,100.00,0.00
+CRP,2017-09-01,Corpus Christi International Airport,Corpus Christi,14,0,14,0,100.00,0.00
+CRP,2017-09-02,Corpus Christi International Airport,Corpus Christi,8,0,8,0,100.00,0.00
+CRP,2017-09-03,Corpus Christi International Airport,Corpus Christi,9,6,3,0,33.33,0.00
+CRP,2017-09-04,Corpus Christi International Airport,Corpus Christi,13,8,5,0,38.46,0.00
+CRP,2017-09-06,Corpus Christi International Airport,Corpus Christi,11,8,3,0,27.27,0.00
+CRP,2017-09-07,Corpus Christi International Airport,Corpus Christi,16,16,1,0,6.25,0.00
+CRP,2017-09-08,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-09,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-09-10,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-11,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-12,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-13,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-14,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-15,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-16,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-09-17,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-18,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-19,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-20,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-21,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-22,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-23,Corpus Christi International Airport,Corpus Christi,12,12,0,0,0.00,0.00
+CRP,2017-09-24,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-25,Corpus Christi International Airport,Corpus Christi,14,14,0,0,0.00,0.00
+CRP,2017-09-26,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-27,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+CRP,2017-09-28,Corpus Christi International Airport,Corpus Christi,16,16,0,0,0.00,0.00
+HOU,2017-07-28,William P Hobby Airport,Houston,326,321,5,0,1.53,0.00
+HOU,2017-07-29,William P Hobby Airport,Houston,267,264,3,0,1.12,0.00

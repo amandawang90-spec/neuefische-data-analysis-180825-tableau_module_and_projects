@@ -1,0 +1,5 @@
+"faa","name","city","total_planned_flights","total_actual_flights","total_cancelled_flights","total_diverted_flights","cancellation_percentage","diversion_percentage"
+IAH,George Bush Intercontinental Houston Airport,Houston,43549,37895,5640,116,12.95,0.27
+HOU,William P Hobby Airport,Houston,18697,15957,2675,106,14.31,0.57
+CRP,Corpus Christi International Airport,Corpus Christi,866,738,129,3,14.90,0.35
+LCH,Lake Charles Regional Airport,Lake Charles,324,278,46,1,14.20,0.31
