@@ -33,6 +33,16 @@
       <color>#51935e</color>
       <color>#77b483</color>
       </color-palette>
+      <color-palette name="Project Palette" type="regular">
+      <color>#79C7B0</color>
+      <color>#7C9E42</color>
+      <color>#74892A</color>
+      <color>#E1533F</color>
+      <color>#D89CC0</color>
+      <color>#F2A03D</color>
+      <color>#0D1B46</color>
+      <color>#1E5BFF</color>
+       </color-palette>
 </preferences>
 </workbook>
 
