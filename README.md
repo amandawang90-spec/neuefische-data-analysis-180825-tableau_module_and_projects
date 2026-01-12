@@ -33,6 +33,7 @@ Module project presentation 🧑‍💻
 
 ### 💻 Project Dashboards
 Here are some of the dashboards I’ve built during this module:
+
 **EMSI: Millennials vs Baby Boomers**
 - Analysis of job numbers, distribution, and growth across generations and states of millennials and baby boomers in USA
 - View Dashboard: https://public.tableau.com/app/profile/jing.wang8227/viz/GenerationalEmploymentPatternsintheUnitedStatesBabyBoomersvs_Millennials20072013/GenerationalEmploymentPatternsintheUnitedStatesBabyBoomersvs_Millennials20072013
