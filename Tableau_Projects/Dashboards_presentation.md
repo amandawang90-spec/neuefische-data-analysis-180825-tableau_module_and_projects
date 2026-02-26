@@ -7,7 +7,7 @@ Here are some of the dashboards I’ve built during this module:
 
 **Michael Hurricane: Impact on Flights**
 - Explore how the hurricane affected flight cancellations across airlines and airports in USA
-- View Dashboard: https://public.tableau.com/app/profile/jing.wang8227/viz/FlightsAnalysisReportofMichaelHurricane/HurricaneHarveyStory
+- View Dashboard: https://public.tableau.com/app/profile/jing.wang8227/viz/FlightsAnalysisofMichaelHurricane/Impactofhurricanemichaelonflights
 
 **Tour de France**                                    
 - Insights into race statistics, stage performance, and rider comparisons              
